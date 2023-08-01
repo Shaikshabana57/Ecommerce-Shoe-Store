@@ -1,0 +1,337 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <title>Shoe store</title>
+    </head>
+    <body>
+        <header>
+            <div id="menu-bar" class="fa fa-bars"></div>
+            <a href="#home" class="logo">
+            <img
+          class="imagesize"
+          src="https://img.freepik.com/premium-vector/shoes-store-logo-template-design_316488-1339.jpg?w=360">
+      </a>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#product">Product</a>
+                <a href="#fearured">Featured</a>
+                <a href="#foot">About</a>
+                <a href="#cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            </nav>
+        </header>
+        <!--end header-->
+        <section class="home" id="home">
+            <div class="slide-container active">
+                <div class="slide">
+                    <div class="content">
+                        <span>Nike Shoes</span>
+                        <h3>Under Armour</h3>
+                        <p>
+                            Allen cooper walking shoes comfortable to wear
+                        </p>
+                       <a href="#cart" onclick="addToCart('Under Armour',4999)" class="btn">Add to cart</button> </a>
+                    </div>
+                    <div class="image">
+                        <img src="img/slide/1st.png" class="shoe">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <span>Nike Sport Shoes</span>
+                        <h3>Nike Metcon Shoes</h3>
+                        <p>
+                            A perfect ensemble for style depends on an ideal outfit and clothing and accessories and footwear.
+                        </p>
+                        <a href="#cart" onclick="addToCart('Nike Metcon Shoes',2859)" class="btn">Add to cart</button> </a>
+                    </div>
+                    <div class="image">
+                        <img src="img/slide/2nd.png" class="shoe">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <span>Puma</span>
+                        <h3>Germany brand</h3>
+                        <p>
+                            The Puma shoes are affordable, chic, chunky, and vintage, colourful with 
+                            vibrant looks and different patterns with colours.
+                        </p>
+                        <a href="#cart" onclick="addToCart('Puma',1299)" class="btn">Add to cart</button> </a>
+                    </div>
+                    <div class="image">
+                        <img src="img/slide/3rd.png" class="shoe">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <span> Levis Shoes</span>
+                        <h3>Brand Shoes</h3>
+                        <p>
+                            They specialize in casual wear inspired by western world trends, especially America. 
+                            Their products are accessible, classic, vintage, and stylish.
+                        </p>
+                        <a href="#cart" onclick="addToCart('Levis Shoes',1595)" class="btn">Add to cart</button> </a>
+                    </div>
+                    <div class="image">
+                        <img src="img/slide/4th.png" class="shoe">
+                    </div>
+                </div>
+            </div>
+
+            <div id="prev" class="fa fa-angle-left" onclick="prev();"></div>
+            <div id="next" class="fa fa-angle-right" onclick="next();"></div>
+        </section>
+        <!--end home-->
+        <section class="product" id="product">
+            <h1 class="heading">latest <span>Products</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="img/product4/1.jpg" alt="">
+                        <h3>Nike-Jordan </h3>
+                        <div class="price">₹2,859/- <span>₹4000</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <a  onclick="addToCart('Nike-Jordan',2859)" class="btn">Add to cart</button> </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="img/product4/2.jpg" alt="">
+                        <h3>Adidas</h3>
+                        <div class="price">₹899/- <span>₹1000</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <a  onclick="addToCart('Adidas',999)" class="btn">Add to cart</button> </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="img/product4/3.jpg" alt="">
+                        <h3>levis </h3>
+                        <div class="price">₹500/- <span>₹800</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <a  onclick="addToCart('Levis',500)" class="btn">Add to cart</button> </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="img/product4/5.png" alt="">
+                        <h3>Relaxo</h3>
+                        <div class="price">₹999/- <span>₹2000</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <a  onclick="addToCart('Relaxo',999)" class="btn">Add to cart</button> </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="img/product4/6.png" alt="">
+                        <h3>Bata</h3>
+                        <div class="price">₹1299/- <span>₹3000</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <a  onclick="addToCart('Bata',1299)" class="btn">Add to cart</button> </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#cart" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="img/product4/8.png" alt="">
+                        <h3>Liberty</h3>
+                        <div class="price">₹1299/-<span>₹2000</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <a  onclick="addToCart('Liberty',1299)" class="btn">Add to cart</button> </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end product-->
+        <section class="featured" id="fearured">
+            <h1 class="heading">Featured <span>Products</span></h1>
+            <div class="row">
+                <div class="image-container">
+                    <div class="small-image">
+                        <img src="img/product1/1.jpg" alt="" class="featured-image-1">
+                        <img src="img/product1/2.jpg" alt="" class="featured-image-1">
+                        <img src="img/product1/3.jpg" alt="" class="featured-image-1">
+                        <img src="img/product1/4.jpg" alt="" class="featured-image-1">
+                    </div>
+                    <div class="big-image">
+                        <img src="img/product1/1.jpg" alt="" class="big-image-1">
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>New Sports fashion shoes</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>
+                        Athletic shoes are specifically designed to be worn for participating in various sports.
+                        Nexon-13 White Sports,Walking. 
+                    </p>
+                    <div class="price">₹999/-<span>₹3000</span></div>
+                    <a href="#cart" onclick="addToCart('New Sports fashion shoes',999)" class="btn">Add to cart</button> </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="image-container">
+                    <div class="small-image">
+                        <img src="img/product2/1.jpg" alt="" class="featured-image-2">
+                        <img src="img/product2/2.jpg" alt="" class="featured-image-2">
+                        <img src="img/product2/3.jpg" alt="" class="featured-image-2">
+                        <img src="img/product2/4.jpg" alt="" class="featured-image-2">
+                    </div>
+                    <div class="big-image">
+                        <img src="img/product2/1.jpg" alt="" class="big-image-2">
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>new nike airmac shoes</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>
+                        Most people wear shoes for fashion, to maintain their social class and comfort.
+                    </p>
+                    <div class="price">₹1599/- <span>₹2000</span></div>
+                    <a href="#cart" onclick="addToCart('new nike airmac shoes',1599)" class="btn">Add to cart</button> </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="image-container">
+                    <div class="small-image">
+                        <img src="img/product3/1.jpg" alt="" class="featured-image-3">
+                        <img src="img/product3/2.jpg" alt="" class="featured-image-3">
+                        <img src="img/product3/3.jpg" alt="" class="featured-image-3">
+                        <img src="img/product3/4.jpg" alt="" class="featured-image-3">
+                    </div>
+                    <div class="big-image">
+                        <img src="img/product3/1.jpg" alt="" class="big-image-3">
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>new ADIDAS shoes</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>
+                        the most comfortable and best footwear for men and women. 
+                    </p>
+                    <div class="price">₹1379/- <span>₹1899</span></div>
+                    <a href="#cart" onclick="addToCart('new ADIDAS shoes',1379)" class="btn">Add to cart</button> </a>
+            </div>
+        </section>
+        <!--end featured-->
+        <div class="cart" id="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items">
+            </ul>
+            <p>Total: MRP:<span id="cart-total">0</span></p>
+        </div>
+
+        <!--end news-->
+        <section class="cridet" id="cridet">
+        </section>
+        <footer id="foot" class="section-p1">
+            <div class="col">
+                <h4>Contact</h4>
+                <p><strong>Address:</strong> Vizag,AP,India</p>
+                <p><strong>Phone Number:</strong>0123456789</p>
+                <p><strong>Hours:</strong>10Am - 6Pm, Monday-Saturday</p>
+            </div>
+            <div class="follow">
+                <h5>Follow Us</h5>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+    
+        </footer>
+    </body>
+</html>
+
+<script src="js/script.js"></script>
